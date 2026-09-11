@@ -6,128 +6,193 @@
     <title>Servicios Integrales de Transporte El Venerable</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0b2545',
+                        brandRed: '#b91c1c',
+                        brandGray: '#f1f5f9'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-100 text-gray-800 font-sans">
 
     <!-- Navegación -->
-    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-xl border-b-4 border-brandRed">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid font-bold text-red-500 text-2xl fa-bus"></i>
-                <span class="font-bold text-lg tracking-wide">EL VENERABLE</span>
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-truck-fast text-brandRed text-3xl"></i>
+                <div>
+                    <span class="font-extrabold text-lg md:text-xl tracking-wider block leading-none">EL VENERABLE</span>
+                    <span class="text-xs text-gray-300 tracking-widest uppercase">Servicios Integrales de Transporte</span>
+                </div>
             </div>
-            <a href="https://wa.me/584149239501" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2 transition duration-300">
+            <a href="https://wa.me/584149239501" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-5 py-2.5 rounded-full text-sm flex items-center gap-2 shadow-lg transition">
                 <i class="fa-brands fa-whatsapp text-lg"></i> Cotizar
             </a>
         </div>
     </nav>
 
-    <!-- Encabezado Principal / Hero -->
-    <section class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-16 px-4 text-center">
+    <!-- Banner Principal / Hero -->
+    <section class="relative bg-gradient-to-r from-brandBlue via-slate-900 to-brandBlue text-white py-16 px-4 text-center border-b-2 border-gray-300">
         <div class="max-w-4xl mx-auto">
-            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Servicio Profesional</span>
-            <h1 class="text-3xl md:text-5xl font-extrabold mt-4 mb-4 leading-tight">
-                Soluciones Integrales de Carga y Transporte de Pasajeros
+            <span class="bg-brandRed text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow">Flota Propia Disponible</span>
+            <h1 class="text-3xl md:text-5xl font-black mt-4 mb-4 tracking-tight uppercase">
+                Tu Solución Profesional de Carga y Transporte
             </h1>
-            <p class="text-gray-300 text-base md:text-lg mb-8 max-w-2xl mx-auto">
-                Servicios de transporte corporativo en Encavas, fletes y logística en camión cava, traslados privados y chofer profesional a nivel local y nacional.
+            <p class="text-gray-300 text-base md:text-lg mb-8 max-w-2xl mx-auto font-light">
+                Traslado corporativo y privado en Encavas, fletes, mudanzas y logística en camión cava a nivel local y nacional.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/584149239501?text=Hola,%20deseo%20solicitar%20un%20presupuesto%20de%20transporte" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg shadow-lg text-center transition">
+                <a href="https://wa.me/584149239501?text=Hola,%20deseo%20solicitar%20un%20presupuesto" target="_blank" class="bg-brandRed hover:bg-red-800 text-white font-bold px-8 py-3.5 rounded-lg shadow-xl text-center transition uppercase tracking-wider">
                     Solicitar Presupuesto
                 </a>
-                <a href="#servicios" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg border border-slate-700 text-center transition">
+                <a href="#servicios" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-3.5 rounded-lg border border-slate-600 text-center transition">
                     Ver Servicios
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Servicios -->
+    <!-- Servicios con Imágenes -->
     <section id="servicios" class="py-16 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900">Nuestros Servicios</h2>
-            <p class="text-gray-600 mt-2">Adaptados a las necesidades de su empresa o requerimiento particular</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brandBlue uppercase">Nuestros Servicios</h2>
+            <div class="h-1 w-24 bg-brandRed mx-auto mt-2 rounded"></div>
+            <p class="text-gray-600 mt-3">Soluciones adaptadas para empresas, comercios y particulares</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition">
-                <div class="text-blue-600 text-4xl mb-4"><i class="fa-solid fa-bus"></i></div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Transporte de Pasajeros</h3>
-                <p class="text-gray-600 text-sm">
-                    Traslado corporativo de personal, viajes ejecutivos, eventos y viajes interurbanos en unidades Encava cómodas y seguras.
-                </p>
+            
+            <!-- Transporte de Pasajeros -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col">
+                <img src="flota.jpg" alt="Transporte de Pasajeros Encavas" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-brandRed font-bold text-sm mb-2">
+                            <i class="fa-solid fa-bus"></i> UNIDADES ENCAVA
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2">Traslado de Pasajeros</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Servicio corporativo y privado para traslado de personal, eventos, delegaciones y viajes interurbanos en unidades cómodas y seguras.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition">
-                <div class="text-red-600 text-4xl mb-4"><i class="fa-solid fa-truck-ramp-box"></i></div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Carga y Logística ("El Camión Hace de Todo")</h3>
-                <p class="text-gray-600 text-sm">
-                    Fletes locales y nacionales, traslado de mercancía general, insumos, despachos comerciales y mudanzas de oficinas o viviendas.
-                </p>
+            <!-- Carga y Logística -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col">
+                <img src="camion.jpg" alt="Camión de Carga El Venerable" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-brandRed font-bold text-sm mb-2">
+                            <i class="fa-solid fa-truck-ramp-box"></i> NUESTRO CAMIÓNHACE DE TODO
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2">Carga y Logística</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Fletes y despachos locales y nacionales, mercancía general, mudanzas residenciales/oficinas, logística empresarial y entrega puerta a puerta.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition">
-                <div class="text-slate-800 text-4xl mb-4"><i class="fa-solid fa-id-card"></i></div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Chofer Profesional</h3>
-                <p class="text-gray-600 text-sm">
-                    Servicio de conducción con amplia experiencia en Encavas y camiones de carga. Licencia vigente, puntualidad y responsabilidad garantizada.
-                </p>
+            <!-- Chofer Profesional -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col justify-between p-6">
+                <div>
+                    <div class="w-14 h-14 bg-brandBlue text-white rounded-xl flex items-center justify-center text-2xl mb-4 shadow">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div class="flex items-center gap-2 text-brandRed font-bold text-sm mb-2">
+                        <i class="fa-solid fa-user-check"></i> CONDUCTORES EXPERTOS
+                    </div>
+                    <h3 class="text-xl font-bold text-brandBlue mb-2">Chofer Profesional</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Personal altamente calificado para la conducción defensiva y responsable de autobuses y camiones de carga general.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-xs font-semibold text-gray-500 uppercase">Licencias y permisos al día</span>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- Por qué elegirnos -->
-    <section class="bg-slate-900 text-white py-16 px-4">
+    <section class="bg-brandBlue text-white py-16 px-4">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">¿Por qué elegir Transporte El Venerable?</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                    <i class="fa-solid fa-clock text-green-400 text-3xl mb-2"></i>
-                    <h4 class="font-bold mb-1">Puntualidad</h4>
-                    <p class="text-xs text-gray-400">Cumplimiento estricto de itinerarios y tiempos de entrega.</p>
+            <h2 class="text-3xl font-extrabold mb-10 uppercase tracking-wide">¿Por qué elegir Transporte El Venerable?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-800/60 rounded-xl border border-slate-700 shadow-md">
+                    <i class="fa-solid fa-clock text-green-400 text-4xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Puntualidad</h3>
+                    <p class="text-sm text-gray-300">Cumplimiento estricto de itinerarios y tiempos de entrega acordados.</p>
                 </div>
-                <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                    <i class="fa-solid fa-shield-halved text-blue-400 text-3xl mb-2"></i>
-                    <h4 class="font-bold mb-1">Seguridad</h4>
-                    <p class="text-xs text-gray-400">Manejo defensivo y resguardo de pasajeros y mercancía.</p>
+                <div class="p-6 bg-slate-800/60 rounded-xl border border-slate-700 shadow-md">
+                    <i class="fa-solid fa-shield-halved text-blue-400 text-4xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Seguridad Garantizada</h3>
+                    <p class="text-sm text-gray-300">Manejo defensivo y resguardo total de pasajeros y mercancía.</p>
                 </div>
-                <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                    <i class="fa-solid fa-wrench text-yellow-400 text-3xl mb-2"></i>
-                    <h4 class="font-bold mb-1">Mantenimiento</h4>
-                    <p class="text-xs text-gray-400">Unidades en óptimas condiciones mecánicas y operativas.</p>
-                </div>
-                <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                    <i class="fa-solid fa-file-contract text-red-400 text-3xl mb-2"></i>
-                    <h4 class="font-bold mb-1">Documentación</h4>
-                    <p class="text-xs text-gray-400">Licencias, permisos y papeles completamente en regla.</p>
+                <div class="p-6 bg-slate-800/60 rounded-xl border border-slate-700 shadow-md">
+                    <i class="fa-solid fa-file-contract text-red-400 text-4xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Documentación en Regla</h3>
+                    <p class="text-sm text-gray-300">Licencias, permisos y documentación totalmente vigentes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto Directo -->
-    <section class="py-16 px-4 max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-slate-900 mb-4">¿Necesitas un servicio de transporte?</h2>
-        <p class="text-gray-600 mb-8">Contáctanos de inmediato para coordinar tus traslados o fletes.</p>
-        
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col md:flex-row justify-around items-center gap-6">
-            <div class="text-left">
-                <p class="text-sm text-gray-500 uppercase font-semibold">Contacto Directo</p>
-                <h3 class="text-2xl font-bold text-slate-900">Jorman</h3>
-                <p class="text-gray-600 text-sm mt-1"><i class="fa-solid fa-envelope text-slate-400 mr-2"></i>jormanalejandro29@gmail.com</p>
-                <p class="text-gray-600 text-sm mt-1"><i class="fa-solid fa-phone text-slate-400 mr-2"></i>+58 414-9239501</p>
-            </div>
-            <div>
-                <a href="https://wa.me/584149239501" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl shadow-md inline-flex items-center gap-3 text-lg transition">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar WhatsApp
+    <!-- Contactos -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-brandBlue uppercase">Atención y Contactos Directos</h2>
+            <p class="text-gray-600 mt-2">Comunícate con nuestro equipo para cotizaciones inmediatas</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Jorman -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-brandRed text-center">
+                <i class="fa-solid fa-user-gear text-brandBlue text-3xl mb-3"></i>
+                <h3 class="text-xl font-bold text-brandBlue">Jorman Cabrera</h3>
+                <p class="text-gray-500 text-xs mb-4">Contacto Principal / Operaciones</p>
+                <a href="https://wa.me/584149239501" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-4 rounded-xl inline-flex items-center gap-2 text-sm transition w-full justify-center">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> 0414-9239501
                 </a>
             </div>
+
+            <!-- Jhonny -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-brandBlue text-center">
+                <i class="fa-solid fa-user-check text-brandBlue text-3xl mb-3"></i>
+                <h3 class="text-xl font-bold text-brandBlue">Jhonny Cabrera</h3>
+                <p class="text-gray-500 text-xs mb-4">Atención y Logística</p>
+                <a href="https://wa.me/584241552768" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-4 rounded-xl inline-flex items-center gap-2 text-sm transition w-full justify-center">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> 0424-1552768
+                </a>
+            </div>
+
+            <!-- Johan -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-brandBlue text-center">
+                <i class="fa-solid fa-user-check text-brandBlue text-3xl mb-3"></i>
+                <h3 class="text-xl font-bold text-brandBlue">Johan Cabrera</h3>
+                <p class="text-gray-500 text-xs mb-4">Atención y Logística</p>
+                <a href="https://wa.me/584128741519" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-4 rounded-xl inline-flex items-center gap-2 text-sm transition w-full justify-center">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> 0412-8741519
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-gray-600 text-sm"><i class="fa-solid fa-envelope mr-2 text-brandRed"></i>jormanalejandro29@gmail.com</p>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-slate-950 text-gray-500 text-center py-6 text-sm border-t border-slate-900">
+    <footer class="bg-slate-950 text-gray-400 text-center py-6 text-sm border-t border-slate-900">
         <p>© 2026 Servicios Integrales de Transporte El Venerable. Todos los derechos reservados.</p>
     </footer>
 
