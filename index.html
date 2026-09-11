@@ -20,30 +20,31 @@
         }
     </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-slate-50 text-gray-800 font-sans">
 
-    <!-- Navegación con Logo pequeño a la izquierda -->
+    <!-- Navegación con tu Logo subido (logo.jpg) -->
     <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-xl border-b-4 border-brandRed">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <!-- Logo del lado izquierdo (tamaño pequeño/moderado h-10) -->
-                <img src="./logo.png" alt="Logo El Venerable" class="h-10 w-auto object-contain rounded" onerror="this.style.display='none'; document.getElementById('icon-fallback').style.display='inline-block';">
-                <!-- Icono de respaldo por si el logo aún no ha cargado -->
-                <i id="icon-fallback" class="fa-solid fa-truck-fast text-brandRed text-2xl hidden"></i>
-                
+                <!-- Logo real desde tu archivo logo.jpg -->
+                <img src="./logo.jpg" alt="Logo El Venerable" class="h-10 w-auto object-contain rounded bg-white p-0.5" onerror="this.style.display='none'; document.getElementById('icon-fallback').style.display='flex';">
+                <!-- Fallback en caso de demora de carga -->
+                <div id="icon-fallback" class="w-10 h-10 bg-brandRed rounded flex items-center justify-center text-white hidden">
+                    <i class="fa-solid fa-truck-fast text-lg"></i>
+                </div>
                 <div>
                     <span class="font-extrabold text-base md:text-xl tracking-wider block leading-none">EL VENERABLE</span>
                     <span class="text-[10px] md:text-xs text-gray-300 tracking-widest uppercase">Servicios Integrales de Transporte</span>
                 </div>
             </div>
-            <a href="https://wa.me/584149239501" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm flex items-center gap-2 shadow-lg transition">
+            <a href="https://wa.me/584149239501" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm flex items-center gap-2 shadow-lg transition">
                 <i class="fa-brands fa-whatsapp text-base md:text-lg"></i> Cotizar
             </a>
         </div>
     </nav>
 
-    <!-- Banner Principal / Hero -->
-    <section class="relative bg-gradient-to-r from-brandBlue via-slate-900 to-brandBlue text-white py-16 px-4 text-center border-b-2 border-gray-300">
+    <!-- Banner Principal -->
+    <section class="relative bg-slate-900 text-white py-16 px-4 text-center border-b-2 border-slate-700">
         <div class="max-w-4xl mx-auto">
             <span class="bg-brandRed text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow">Flota Propia Disponible</span>
             <h1 class="text-3xl md:text-5xl font-black mt-4 mb-4 tracking-tight uppercase">
@@ -63,7 +64,29 @@
         </div>
     </section>
 
-    <!-- Servicios Principales con Fotos -->
+    <!-- Indicadores Clave -->
+    <section class="bg-brandBlue text-white py-6 border-b border-slate-700">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div>
+                <span class="block text-2xl font-black text-brandRed">100%</span>
+                <span class="text-xs text-gray-300 uppercase">Puntualidad</span>
+            </div>
+            <div>
+                <span class="block text-2xl font-black text-brandRed">Nacional</span>
+                <span class="text-xs text-gray-300 uppercase">Cobertura</span>
+            </div>
+            <div>
+                <span class="block text-2xl font-black text-brandRed">24/7</span>
+                <span class="text-xs text-gray-300 uppercase">Atención</span>
+            </div>
+            <div>
+                <span class="block text-2xl font-black text-brandRed">Garantizado</span>
+                <span class="text-xs text-gray-300 uppercase">Resguardo de Carga</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Principales con tus fotos exactas -->
     <section id="servicios" class="py-16 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-extrabold text-brandBlue uppercase">Nuestros Servicios</h2>
@@ -73,9 +96,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
-            <!-- 1. Transporte de Pasajeros -->
+            <!-- 1. Transporte de Pasajeros (flota.jpg) -->
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col">
-                <a href="./flota.jpg" target="_blank" title="Haz clic para agrandar imagen">
+                <a href="./flota.jpg" target="_blank" title="Haz clic para agrandar">
                     <img src="./flota.jpg" alt="Transporte de Pasajeros Encavas" class="w-full h-48 object-cover hover:opacity-90 transition cursor-pointer">
                 </a>
                 <div class="p-6 flex-1 flex flex-col justify-between">
@@ -91,15 +114,15 @@
                 </div>
             </div>
 
-            <!-- 2. Carga y Logística -->
+            <!-- 2. Carga y Logística (camion.jpg) -->
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col">
-                <a href="./camion.jpg" target="_blank" title="Haz clic para agrandar imagen">
+                <a href="./camion.jpg" target="_blank" title="Haz clic para agrandar">
                     <img src="./camion.jpg" alt="Camión de Carga El Venerable" class="w-full h-48 object-cover hover:opacity-90 transition cursor-pointer">
                 </a>
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 text-brandRed font-bold text-sm mb-2">
-                            <i class="fa-solid fa-truck-ramp-box"></i> NUESTRO CAMIÓN HACE DE TODO
+                            <i class="fa-solid fa-truck-ramp-box"></i> CAMIÓN CAVA
                         </div>
                         <h3 class="text-xl font-bold text-brandBlue mb-2">Carga y Logística</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">
@@ -109,10 +132,10 @@
                 </div>
             </div>
 
-            <!-- 3. Chofer Profesional con Imagen -->
+            <!-- 3. Chofer Profesional (choferes.jpg) -->
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition flex flex-col">
-                <a href="./chofer.jpg" target="_blank" title="Haz clic para agrandar imagen">
-                    <img src="./chofer.jpg" alt="Choferes Profesionales" class="w-full h-48 object-cover hover:opacity-90 transition cursor-pointer">
+                <a href="./choferes.jpg" target="_blank" title="Haz clic para agrandar">
+                    <img src="./choferes.jpg" alt="Choferes Profesionales" class="w-full h-48 object-cover hover:opacity-90 transition cursor-pointer">
                 </a>
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
@@ -130,28 +153,6 @@
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Galería de Fotos -->
-    <section class="py-12 bg-gray-200 border-t border-b border-gray-300">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold text-brandBlue uppercase">Galería de Fotos</h3>
-                <p class="text-gray-600 text-sm">Haz clic en cualquier imagen para verla en tamaño completo</p>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
-                <a href="./flota.jpg" target="_blank" class="overflow-hidden rounded-xl shadow border border-gray-300 bg-white">
-                    <img src="./flota.jpg" alt="Unidades de Transporte" class="w-full h-40 object-cover hover:scale-105 transition duration-300">
-                </a>
-                <a href="./camion.jpg" target="_blank" class="overflow-hidden rounded-xl shadow border border-gray-300 bg-white">
-                    <img src="./camion.jpg" alt="Camión Cava" class="w-full h-40 object-cover hover:scale-105 transition duration-300">
-                </a>
-                <a href="./chofer.jpg" target="_blank" class="overflow-hidden rounded-xl shadow border border-gray-300 bg-white">
-                    <img src="./chofer.jpg" alt="Chofer Profesional" class="w-full h-40 object-cover hover:scale-105 transition duration-300">
-                </a>
-            </div>
         </div>
     </section>
 
